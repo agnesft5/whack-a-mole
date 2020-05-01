@@ -1,0 +1,210 @@
+/* .showBorder{
+    border: 1px solid black;
+} */
+.main__wraper{
+    min-height: 100vh;
+    background-image: url(../whack-a-mole/assets/cactus.jpg);
+    background-size: cover;
+}
+.main__title{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: black;
+    margin: 1% 2.5% 0% 2.5%;
+}
+.feed__title{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.25rem;
+    color:black;
+    margin: 1% 2.5% 1.5% 1.5%;
+}
+.score__counter, .time__counter{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: rgb(212, 85, 30);
+}
+.table__wraper{
+    position: relative;
+    margin: 0 auto !important;
+    width: 75%;
+}
+.table__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table{
+    height: 75vh;
+    width: 75vh;
+    margin: auto;
+    background-color: white;
+    border-radius: .25rem;
+    border: 2px solid black;
+    margin-bottom: 2.5%;
+}
+.table__square{
+    height: 24.9vh;
+    width: 24.9vh;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.mole{
+    background-size: contain;
+    background-image: url(../whack-a-mole/assets/mole.png);
+}
+.message{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    background-color: white;
+}
+.clickable{
+    cursor: pointer;
+    color: black;
+    transition: .5s;
+}
+.clickable:hover{
+    color: teal;
+    transition: .5s;
+}
+@media (max-width: 1300px) {
+    .score__container{
+        margin: 2.5% !important;
+    }
+}
+@media (max-width: 1024px) {
+    .score__container{
+        margin: 4.5% !important;
+    }
+    .table {
+        height: 60vh;
+        width: 60vh;
+    }
+    .table__square {
+        height: 19.9vh;
+        width: 19.9vh;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+}
+@media (max-width: 768px) {
+    .main__title {
+        margin-top: 10%;
+    }
+}
+@media (max-width: 576px) {
+    .table__wraper{
+        width: 100%;
+    }
+    .score__container{
+        margin-top: 15% !important;
+    }
+    .table {
+        height: 45vh;
+        width: 45vh;
+    }
+    .table__square {
+        height: 14.9vh;
+        width: 14.9vh;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+    .score__counter, .time__counter{
+        font-size: 1rem;
+    }
+    .main__title, .message{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 375px) and (min-height: 812px) {
+    .score__container{
+        margin-top: 15% !important;
+    }
+    .table {
+        height: 39vh;
+        width: 39vh;
+    }
+    .table__square {
+        height: 12.9vh;
+        width: 12.9vh;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+    .feed__title{
+        font-size: 1rem;
+    }
+    .score__counter, .time__counter{
+        font-size: 1rem;
+    }
+    .main__title, .message{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 375px){
+    .score__container{
+        margin-top: 15% !important;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+    .feed__title{
+        font-size: 1rem;
+    }
+    .score__counter, .time__counter{
+        font-size: 1rem;
+    }
+    .main__title, .message{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 360px) {
+    .score__container{
+        margin-top: 15% !important;
+    }
+    .table {
+        height: 45vh;
+        width: 45vh;
+    }
+    .table__square {
+        height: 14.9vh;
+        width: 14.9vh;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+    .score__counter, .time__counter{
+        font-size: 1rem;
+    }
+    .main__title, .message{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 320px) {
+    .score__container{
+        margin-top: 15% !important;
+    }
+    .table {
+        height: 45vh;
+        width: 45vh;
+    }
+    .table__square {
+        height: 14.9vh;
+        width: 14.9vh;
+    }
+    .main__title {
+        margin-top: 15%;
+    }
+    .score__counter, .time__counter{
+        font-size: 1rem;
+    }
+    .main__title, .message{
+        font-size: 2rem;
+    }
+}
