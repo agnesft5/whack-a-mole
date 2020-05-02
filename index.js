@@ -3,6 +3,7 @@ const mole = document.querySelectorAll(".mole");
 let timeCounter = document.querySelectorAll(".time__counter")[0];
 let scoreCounter = document.querySelectorAll(".score__counter")[0];
 let message = document.querySelector(".message");
+let startCounter = document.querySelector(".startCounter");
 
 let result = [];
 let moleSquareId;
@@ -82,6 +83,22 @@ function game() {
     moveMole();
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     game();
-// })
+document.addEventListener('DOMContentLoaded', () => {
+    let readySetGo = 4;
+    let startInterval = null;
+    function start(){
+        if (readySetGo > 0){
+            readySetGo--
+            startCounter.textContent = readySetGo;
+        }
+    }
+
+    startInterval = setInterval(start, 1000)
+
+    setTimeout(() => {
+        startCounter.textContent = "";
+        clearInterval(startInterval);
+        game();
+    }, 4000);
+
+})

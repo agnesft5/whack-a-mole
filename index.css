@@ -71,6 +71,16 @@
     color: teal;
     transition: .5s;
 }
+.startCounter{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    color: rgb(212, 85, 30);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    background-color: white;
+}
 @media (max-width: 1300px) {
     .score__container{
         margin: 2.5% !important;
@@ -91,10 +101,16 @@
     .main__title {
         margin-top: 15%;
     }
+    .message{
+        left: 26%;
+    }
 }
 @media (max-width: 768px) {
     .main__title {
         margin-top: 10%;
+    }
+    .message{
+        left: 18%;
     }
 }
 @media (max-width: 576px) {
@@ -116,10 +132,16 @@
         margin-top: 15%;
     }
     .score__counter, .time__counter{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .main__title, .message{
         font-size: 2rem;
+    }
+    .feed__title{
+        font-size: .9rem;
+    }
+    .message{
+        left: 12%;
     }
 }
 @media (max-width: 375px) and (min-height: 812px) {
@@ -146,6 +168,10 @@
     .main__title, .message{
         font-size: 2rem;
     }
+    .message{
+        left: 10%;
+        font-size: 1.9rem !important;
+    }
 }
 @media (max-width: 375px){
     .score__container{
@@ -155,13 +181,17 @@
         margin-top: 15%;
     }
     .feed__title{
-        font-size: 1rem;
+        font-size: .8rem !important;
     }
     .score__counter, .time__counter{
-        font-size: 1rem;
+        font-size: .8rem !important;
     }
     .main__title, .message{
         font-size: 2rem;
+    }
+    .message{
+        left: 12%;
+        font-size: 1.8rem !important;
     }
 }
 @media (max-width: 360px) {
@@ -179,11 +209,12 @@
     .main__title {
         margin-top: 15%;
     }
-    .score__counter, .time__counter{
-        font-size: 1rem;
-    }
     .main__title, .message{
         font-size: 2rem;
+    }
+    .message{
+        left: 13%;
+        font-size: 1.7rem !important;
     }
 }
 @media (max-width: 320px) {
@@ -201,10 +232,11 @@
     .main__title {
         margin-top: 15%;
     }
-    .score__counter, .time__counter{
-        font-size: 1rem;
-    }
     .main__title, .message{
         font-size: 2rem;
+    }
+    .message{
+        left: 13%;
+        font-size: 1.5rem !important;
     }
 }
